@@ -1,0 +1,13 @@
+# Mantem os arquivos de texto consistentes entre Windows, Linux e macOS.
+* text=auto
+*.py text eol=lf
+*.ino text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
+
+# Assets binarios nao devem sofrer conversao de fim de linha.
+*.mp3 binary
+*.wav binary
+*.png binary

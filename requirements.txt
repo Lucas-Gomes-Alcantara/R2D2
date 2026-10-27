@@ -1,0 +1,39 @@
+# ==============================
+# R.2.D.2 (Dedão) - Dependências
+# Instale com: pip install -r requirements.txt
+# ==============================
+
+# Reconhecimento de voz (Google STT + microfone)
+SpeechRecognition==3.17.0
+pyaudio==0.2.14
+
+# Síntese de voz (gTTS, online) e reprodução de áudio
+gTTS>=2.5.0
+pygame==2.6.1
+
+# Visão computacional (detecção facial; o -contrib já inclui cv2.face
+# para o reconhecimento LBPH que será implementado)
+opencv-contrib-python==4.12.0.88
+numpy==2.2.6
+
+# Requisições HTTP (Ollama, clima, cotações)
+requests==2.34.2
+
+# IA na nuvem (backup do Ollama)
+# A chave vai na variável de ambiente GROQ_API_KEY (nunca no código)
+groq==1.6.0
+
+# Screenshot
+Pillow
+
+# Comunicação serial com o Arduino Uno (servo do grito)
+# A porta pode ser fixada com a variável de ambiente ARDUINO_PORT
+pyserial>=3.5
+
+# ------------------------------
+# Notas
+# ------------------------------
+# - Ollama deve estar instalado e rodando localmente
+#   Download: https://ollama.com
+#   Modelo:   ollama pull llama3.2:3b
+# - Arduino: envie arduino/r2d2_servo/r2d2_servo.ino para o Uno antes de rodar
